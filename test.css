@@ -216,19 +216,7 @@ object-fit: cover;
   text-align: center;
 }
 
-.container__ffflogo {
-  display: flex;
-  width: 50%;
-  max-width: 200px;
-  padding-top: 4em;
-  padding-left: 5%;
-}
-.img__ffflogo {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
-}
+
 .img__fffight{
   display: flex;
   width: 100%;
