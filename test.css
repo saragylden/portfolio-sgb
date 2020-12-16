@@ -1,0 +1,580 @@
+/*--------------- Navigation bar ----------------*/
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #ffffff;
+   color: black;
+   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.brand-title{
+  font-size: 1.5rem;
+  margin: 1rem;
+  text-transform: uppercase;
+  color: #a62c2b;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li{
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  display: block;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-links li:hover {
+  background-color: #a62c2b;
+  height: 5px;
+  bottom: 0;
+  z-index: 0;
+  transition: all .5 ease 0s;
+}
+
+
+.imgcontainer {
+  flex: 1;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.heroimg {
+  max-width: 20%;
+}
+
+
+/*------------ header --------------*/
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/*----------------Forside-----------------*/
+.portrait__frontpage {
+    flex: 1;
+    overflow: auto;
+}
+  .portrait__image {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+    object-fit: cover;
+}
+
+/*----------------Om mig------------------*/
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  overflow: auto;
+}
+
+.portrait__container {
+  width: 50%;
+  max-width: 400px;
+  padding-top: 4em;
+}
+.portrait__img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+.portrait__text {
+  margin-left: 30px;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 35%;
+  padding-top: 4em;
+}
+.portrait__p {
+  line-height: 1.5em;
+}
+/*--------------- portræt css -----------------*/
+.text__container {
+  flex: 1;
+  font-family: 'Montserrat', sans-serif;
+  padding: 120px 50px 30px 45px;
+}
+.img__container {
+  flex: 1;
+  overflow: auto;
+}
+#portrait__img {
+object-fit: cover;
+  width: 100%;
+}
+#lilleskærm {
+  display: none;
+}
+
+/*------------ Logo -----------*/
+.img__logo{
+  width: 65%;
+  height: 65%;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  position: absolute;
+  z-index: 3;
+}
+#logo__img{
+  height: auto;
+  max-width: 28%;
+}
+
+/*----------- FORSIDE knapper ------------*/
+.button {
+  width: 30%;
+  background-color: white;
+  border: 2px solid #a62c2b;
+  color: #0E222B;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  flex-direction: column;
+}
+.button:hover{
+  background-color: #a62c2b;
+  color: #f5f5f5;
+}
+
+.button:first-of-type{
+  margin-bottom: 25px;
+}
+
+/*-------------- portfolio side ----------------*/
+.card-container{
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  grid-gap: 5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.grid-item {
+  background-color: none;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.grid-item:hover{
+  transform: translate(5%, 5%) scale(0.9);
+}
+
+
+/*------------------- Kontakt side ------------------*/
+.text__kontaktside {
+  flex: 1;
+  font-family: 'Montserrat', sans-serif;
+  padding: 120px 50px 30px 45px;
+  position: absolute;
+}
+
+/*--------------- FridayFitFights -------------------*/
+.container_Fridayfitfights{
+  font-family: 'Montserrat', sans-serif;
+  color: #a62c2b;
+  text-align: center;
+}
+
+.container__ffflogo {
+  display: flex;
+  width: 50%;
+  max-width: 200px;
+  padding-top: 4em;
+  padding-left: 5%;
+}
+.img__ffflogo {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+.img__fffight{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 70px 70px 0px 80px;
+}
+.img__fffpage{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 110px 220px 80px 0px;
+}
+
+.container_ffftext{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  margin: auto;
+  width: 40%;
+  line-height: 19px;
+}
+
+/*--------------- Dare to Dream Atelier ------------*/
+.container_daretodream{
+  font-family: 'Montserrat', sans-serif;
+  color: #a62c2b;
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+}
+
+.container_dtdtext{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  margin: auto;
+  width: 40%;
+  line-height: 19px;
+}
+
+.img__dtd {
+  display: flex;
+  width: 50%;
+  max-width: 300px;
+  padding-top: 0%;
+  padding-left: 5%;
+}
+.img__dtdhighlights{
+  display: flex;
+  width: 50%;
+  padding: 300px 0px 130px 30px;
+}
+
+/*--------------- PHOTO RETOUCH ---------------------*/
+.container_photoshop{
+  font-family: 'Montserrat', sans-serif;
+  color: #a62c2b;
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+}
+
+.container_photoretouch{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  margin: auto;
+  width: 40%;
+  line-height: 19px;
+}
+
+.img__samoriginal{
+  display: flex;
+  width: 50%;
+  max-width: 100%;
+  padding-top: 0%;
+  margin-left: 5%;
+}
+
+.img__samnike{
+  display: flex;
+  width: 50%;
+  max-width: 100%;
+  padding-top: 22%;
+  padding-left: 5%;
+}
+
+/*--------------- Premiere Pro ---------------------*/
+.container__premierepro{
+  font-family: 'Montserrat', sans-serif;
+  color: #a62c2b;
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+}
+
+.container_pptext{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  margin: auto;
+  width: 40%;
+  line-height: 19px;
+}
+
+/*---------------- LIGHTROOM -----------------*/
+.container__lightroom{
+font-family: 'Montserrat', sans-serif;
+color: #a62c2b;
+text-align: center;
+padding: 15px 0px 15px 0px;
+}
+
+.container__lrtext{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  margin: auto;
+  width: 40%;
+  line-height: 19px;
+}
+
+.img__portraitedit{
+  display: flex;
+  width: 50%;
+  max-width: 250px;
+  padding-top: 0%;
+  padding-left: 5%;
+}
+
+.img__icecubes{
+  display: flex;
+  width: 70%;
+  max-width: 300px;
+  padding-top: 20%;
+  padding-left: 5%;
+}
+
+/*----------------- XD ---------------------*/
+.container__xd{
+  font-family: 'Montserrat', sans-serif;
+  color: #a62c2b;
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+}
+
+.container__xdtext{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  margin: auto;
+  width: 40%;
+  line-height: 19px;
+}
+
+.img__foodapp{
+  display: flex;
+  width: 50%;
+  max-width: 250px;
+  padding-top: 0%;
+  padding-left: 5%;
+}
+
+.img__dyrehotellet{
+  display: flex;
+  width: 50%;
+  max-width: 250px;
+  padding-top: 35%;
+  padding-left: 5%;
+}
+
+/*--------------- RESPONSIV DESIGN ------------------*/
+@media only screen and (max-width: 600px) {
+  .navbar {
+     width: 100%;
+     font-size: 10px;
+  }
+
+  .brand-title{
+    font-size: 10px;
+    margin: 1rem;
+    text-transform: uppercase;
+    color: #a62c2b;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+/*---------------- FORSIDE ----------------*/
+  .button {
+    width: 35%;
+    position: relative;
+    top: 80%;
+    left: 30%;
+  }
+  .img__logo{
+    display: none;
+  }
+  .text__container {
+    padding: 0%;
+    text-align: center;
+    font-size: 8px;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+  .img__container {
+    display: none;
+  }
+
+  #lilleskærm {
+    display: none;
+  }
+
+
+/*--------------- OM MIG ------------------*/
+.portrait__container {
+  width: 35%;
+  margin-top: 0%;
+}
+.portrait__text {
+  font-size: 8px;
+}
+
+/*--------------- PORTFOLIO ----------------*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 6fr);
+}
+
+/*-------------- FridayFitFights ---------------*/
+
+.container_Fridayfitfights{
+  font-family: 'Montserrat', sans-serif;
+  color: #a62c2b;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 5%;
+}
+
+.container__ffflogo {
+  display: flex;
+}
+.img__ffflogo {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+.img__fffight{
+  display: none;
+}
+.img__fffpage{
+  display: none;
+}
+
+.container_ffftext{
+  font-size: 10px;
+  margin: auto;
+  width: 70%;
+  line-height: 15px;
+  padding-left: 10%;
+}
+
+/*------------- DARE TO DREAM --------------*/
+.container_daretodream{
+  font-family: 'Montserrat', sans-serif;
+  color: #a62c2b;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 5%;
+}
+
+.img__dtd{
+  display: none;
+}
+.img__dtdhighlights{
+  display: flex;
+  margin-top: 30px;
+  margin-left: 120px;
+}
+
+.container_dtdtext{
+  font-size: 10px;
+  margin: auto;
+  width: 70%;
+  line-height: 15px;
+  padding-left: 10%;
+}
+
+
+/*---------------- PHOTOSHOP --------------------*/
+.container_photoshop{
+  font-size: 10px;
+}
+.container_photoretouch{
+  width: 70%;
+  font-size: 9px;
+}
+.img__samoriginal{
+  display: none;
+}
+
+.img__samnike{
+  display: flex;
+  padding-top: 270px;
+  padding-left: 5px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+/*------------ premiere pro -------------*/
+.container__premierepro{
+  font-size: 10px;
+}
+
+.container_pptext{
+  font-size: 9px;
+  width: 70%;
+}
+
+/*------------ lightroom ---------------*/
+.container__lightroom{
+  font-size: 10px;
+}
+
+.container__lrtext{
+  font-size: 9px;
+  width: 70%;
+}
+
+.img__portraitedit{
+  display: none;
+}
+.img__icecubes{
+  display: flex;
+  padding-top: 320px;
+}
+
+/*------------------ adobe xd -----------------*/
+.container__xd{
+  font-size: 10px;
+}
+.container__xdtext{
+  font-size: 9px;
+  width: 70%;
+}
+.img__foodapp{
+  display: none;
+}
+.img__dyrehotellet{
+  display: flex;
+  padding-top: 110px;
+}
+
+}
